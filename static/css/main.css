@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.titulo_principal {
+  font-size: 4rem;
+  color: #0d0d0d;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.subtitulo_principal {
+  font-size: 1.5rem;
+  color: #0d0d0d;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+}
+
+.titulo_secundario {
+  font-size: 2rem;
+  color: #0d0d0d;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.subtitulo_secundario {
+  font-size: 1.5rem;
+  color: #0d0d0d;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: lighter;
+}
+
+
+.divForNoticias {
+  margin-top: 1rem;
+}
+
+
+.content {
+  padding-top: 70px; 
+}
+
+
+header {
+    background-color: #333;
+}
+
+section {
+  margin-top: 1em;
+  padding: 1em;
+  
+}
+
+
+
+
+
+
+
+  
+
+  /* PORTADA */
+
+
+header.masthead {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: calc(4rem + 57px);
+  padding-bottom: 4rem;
+  background: no-repeat center center;
+  background-color: #262626;
+  background-size: cover;
+  background-attachment: scroll;
+}
+header.masthead:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #262626;
+  opacity: 0.5;
+}
+header.masthead .page-heading,
+header.masthead .post-heading,
+header.masthead .site-heading {
+  color: #fff;
+}
+header.masthead .page-heading,
+header.masthead .site-heading {
+  text-align: center;
+}
+header.masthead .page-heading h1, header.masthead .page-heading .h1,
+header.masthead .site-heading h1,
+header.masthead .site-heading .h1 {
+  font-size: 2rem;
+}
+header.masthead .page-heading .subheading,
+header.masthead .site-heading .subheading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  display: block;
+  margin-top: 0.625rem;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+  font-size: 2.25rem;
+}
+header.masthead .post-heading .meta,
+header.masthead .post-heading .subheading {
+  line-height: 1.1;
+  display: block;
+}
+header.masthead .post-heading .subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.75rem 0 2rem;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .post-heading .meta {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .post-heading .meta a {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  
+  header.masthead .page-heading h1, header.masthead .page-heading .h1,
+  header.masthead .site-heading h1,
+  header.masthead .site-heading .h1 {
+    font-size: 5rem;
+  }
+  header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+    font-size: 3.5rem;
+  }
+  header.masthead .post-heading .subheading {
+    font-size: 1.875rem;
+  }
+}
+
+
+
+
+/*  Evita que se oculte contenido debajo del navbar, no encontre otra forma :( */
+.contenidoPrincipal {
+  margin-top: 3rem;
+}
+#portada {
+  margin-top: -3rem; /* resta el margin-top del contenido principal, para que en la portada se encuentre pegado a la parte superior de la pagina */
+}
+
+
+
+.icono_borrar_comentario,
+.icono_editar_comentario {
+  color: #0d0d0d;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  float: right;
+}
+
+
+.icono_borrar_comentario:hover {
+  color: #f25757; /* Cambiar el color al pasar el mouse por encima */
+}
+.icono_editar_comentario:hover {
+  color: #57c6f2; /* Cambiar el color al pasar el mouse por encima */
+}
